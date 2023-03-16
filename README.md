@@ -9,5 +9,6 @@ The Caesar Cipher is one of the earliest and simplest encryption techniques, and
 
 The Vigenere Cipher is a method of encrypting alphabetic text, and is classified as a polyalphabetic substitution cipher. A table consisting of the alphabets written out 26 times in different rows, with each alphabet shifted cyclically to the left compared to the previous alphabet, is used to encrypt the text. At different points in the encryption method, the cipher will choose a different alphabet from one of the rows, which is entirely dependent on a keyword entered by the user. 
 
-![image](https://user-images.githubusercontent.com/127687854/225670875-4bca407d-785b-4f12-bda0-1f27333e9486.png)
+![image](https://user-images.githubusercontent.com/127687854/225671313-0126a5fb-7a2f-4e40-a7ab-9263464cdc77.png)
+
 
