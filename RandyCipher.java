@@ -8,23 +8,23 @@ public class RandyCipher{
 
     public static void main(String[] args) {
         cipherMap = new HashMap<>();
-        Scanner scanner = new Scanner(System.in);
+        Scanner key = new Scanner(System.in);
 
         System.out.print("Enter the substitution key: ");
-        String key = scanner.nextLine().toUpperCase();
+        String input = key.nextLine().toUpperCase();
 
-        if (key.length() != 26) {
+        if (input.length() != 26) {
             System.out.println("Invalid key! Key should be 26 unique uppercase letters.");
             return;
         }
 
         // populate the cipherMap
-        for (int i = 0; i < key.length(); i++) {
-            cipherMap.put((char) (i + 'A'), key.charAt(i));
+        for (int i = 0; i < input.length(); i++) {
+            cipherMap.put((char) (i + 'A'), input.charAt(i));
         }
 
         System.out.print("Enter the message to encrypt: ");
-        String message = scanner.nextLine().toUpperCase();
+        String message = key.nextLine().toUpperCase();
 
         // encrypt the message
         String encrypted = encrypt(message);
